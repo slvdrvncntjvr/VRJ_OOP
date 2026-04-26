@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-12 space-y-8">
       <BezelPanel padding="p-3 sm:p-5">
         <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-3 sm:gap-5">
-          <JCard side="A" catalog="CAT. SVJ-001 · 2026 · HOME">
+          <JCard title="SIDE A">
             <div className="p-6 sm:p-10 relative min-h-[390px] flex flex-col">
               <div className="flex items-center justify-between typewriter text-[10px] text-graphite/70 pb-3 border-b border-graphite/20">
                 <span>COMP 009</span>

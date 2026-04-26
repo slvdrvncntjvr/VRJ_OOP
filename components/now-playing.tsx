@@ -19,6 +19,7 @@ export function NowPlaying() {
     k === "/" ? pathname === "/" : pathname.startsWith(k),
   )
   const current = TRACKS[key ?? "/"]
+  const routeLabels = ["HOME", "MIDTERM", "FINAL", "CONTACT"]
 
   return (
     <footer className="relative z-[3] border-t border-brass/25 bezel-dark">
@@ -80,11 +81,29 @@ export function NowPlaying() {
           />
         </div>
 
-        <div
-          className="w-full typewriter text-[9px] text-cream/45 pt-1 border-t border-brass/15"
-          style={{ letterSpacing: "0.2em" }}
-        >
-          SALVADOR VINCENT JAVIER (VINCENT) · POLYTECHNIC UNIVERSITY OF THE PHILIPPINES · BSIT 2-1 · © 2026
+        <div className="w-full pt-1 border-t border-brass/15 flex items-center justify-between gap-3 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap">
+            {routeLabels.map((label) => {
+              const active = current.title === label
+              return (
+                <span
+                  key={label}
+                  className="typewriter text-[9px] px-2 py-1 border rounded-sm"
+                  style={{
+                    letterSpacing: "0.16em",
+                    borderColor: active ? "rgba(201,169,97,0.5)" : "rgba(201,169,97,0.25)",
+                    color: active ? "rgba(237,228,211,0.92)" : "rgba(237,228,211,0.5)",
+                    background: active ? "rgba(201,169,97,0.08)" : "transparent",
+                  }}
+                >
+                  {label}
+                </span>
+              )
+            })}
+          </div>
+          <div className="typewriter text-[9px] text-cream/55" style={{ letterSpacing: "0.18em" }}>
+            AUDIO STATUS · {isPlaying ? "PLAYING" : "PAUSED"}
+          </div>
         </div>
       </div>
     </footer>

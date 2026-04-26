@@ -28,7 +28,7 @@ const SECTIONS: Section[] = [
         filename: "midterm-quiz-1.pdf",
         trackNumber: "01",
         duration: "03:10",
-        annotation: "questions, answers, and short explanation",
+        annotation: "Includes key questions, my final answers, and a short concept recap",
         src: "/portfolio/midterm/midterm-quiz-1.pdf",
       },
       {
@@ -36,7 +36,7 @@ const SECTIONS: Section[] = [
         filename: "midterm-quiz-2.pdf",
         trackNumber: "02",
         duration: "02:55",
-        annotation: "include your score and reflection",
+        annotation: "Shows score breakdown plus a quick reflection on mistakes and improvements",
         src: "/portfolio/midterm/midterm-quiz-2.jpeg",
       },
     ],
@@ -51,7 +51,7 @@ const SECTIONS: Section[] = [
         filename: "midterm-seatwork-1.pdf",
         trackNumber: "03",
         duration: "04:20",
-        annotation: "show solution with explanation",
+        annotation: "Step-by-step solution with short notes on how each part works",
         src: "/portfolio/midterm/midterm-seatwork-1.pdf",
       },
     ],
@@ -66,7 +66,7 @@ const SECTIONS: Section[] = [
         filename: "midterm-activity-atm.pdf",
         trackNumber: "04",
         duration: "05:30",
-        annotation: "add code screenshot plus learnings",
+        annotation: "Program flow, sample output, and what I learned from debugging",
         src: "/portfolio/midterm/midterm-activity-atm.pdf",
       },
       {
@@ -95,7 +95,7 @@ const SECTIONS: Section[] = [
         filename: "midterm-exam.pdf",
         trackNumber: "07",
         duration: "12:00",
-        annotation: "answers or code with reflection",
+        annotation: "Complete output with brief notes on problem-solving approach",
         src: "/portfolio/midterm/midterm-exam.pdf",
       },
     ],
@@ -151,9 +151,10 @@ export default function MidtermPage() {
               Midterm Requirements
             </h1>
             <p className="text-cream/70 mt-3 max-w-prose leading-relaxed text-[15px]">
-              This page contains quizzes, seatwork, activities, and exam
-              outputs. Each card is ready for your PDF or screenshot upload,
-              with short explanation and reflection.
+              This section compiles my midterm quizzes, seatwork, activities,
+              and exam outputs. Each card includes the actual file plus a short
+              explanation of what I answered, how I solved it, and what I
+              improved.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-2">
@@ -215,32 +216,21 @@ export default function MidtermPage() {
       <BezelPanel variant="brass" padding="p-2.5">
         <JCard title="REFLECTION" catalog="MIDTERM">
           <div className="p-6 sm:p-9 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6">
-            <div
-              className="typewriter text-[10px] text-oxblood shrink-0"
-              style={{ letterSpacing: "0.22em", writingMode: "vertical-rl" }}
-            >
-              ▸ REFLECTION
-            </div>
             <div className="space-y-4">
               <p className="font-serif text-2xl text-graphite leading-snug text-pretty">
-                Midterm was the point where OOP started to feel practical, not
-                just theoretical.
+                Midterm was the point where I stopped memorizing OOP terms and
+                started seeing how they help me build real programs.
               </p>
               <p className="text-graphite/80 leading-relaxed text-[15px]">
-                Through quizzes, seatwork, and activities, I improved in
-                building classes, separating methods by purpose, and tracing
-                program flow before coding. I also became more careful in
-                explaining outputs, not only showing them. My next goal is to
-                write cleaner class designs and use abstraction more
-                consistently.
+                The quizzes, seatwork, and activities pushed me to think more
+                carefully about class design, method use, and program flow
+                before I write code. I also became more confident in explaining
+                what my output means instead of only submitting the result. If I
+                improve anything next, it should be cleaner structure and more
+                consistent abstraction.
               </p>
-              <div className="flex items-end justify-between pt-4 border-t border-dashed border-graphite/30">
-                <p className="handwritten text-oxblood/85 text-[18px]">
-                  - Vincent
-                </p>
-                <span className="typewriter text-[10px] text-graphite/60">
-                  END OF MIDTERM
-                </span>
+              <div className="pt-4 border-t border-dashed border-graphite/30">
+                <p className="handwritten text-oxblood/85 text-[18px]">- Vincent</p>
               </div>
             </div>
           </div>

@@ -11,8 +11,8 @@ export default function HomePage() {
           <JCard side="A" catalog="CAT. SVJ-001 · 2026 · HOME">
             <div className="p-6 sm:p-10 relative min-h-[390px] flex flex-col">
               <div className="flex items-center justify-between typewriter text-[10px] text-graphite/70 pb-3 border-b border-graphite/20">
-                <span>E-PORTFOLIO</span>
-                <span>OBJECT-ORIENTED PROGRAMMING</span>
+                <span>COMP 009</span>
+                <span>PUP · BSIT 2-1</span>
               </div>
 
               <div className="flex-1 flex flex-col justify-center py-8">
@@ -25,9 +25,6 @@ export default function HomePage() {
                 <h1 className="font-serif text-[2.75rem] sm:text-6xl leading-[0.95] text-graphite text-balance">
                   Salvador Vincent Javier
                 </h1>
-                <p className="typewriter text-[11px] text-graphite/70 mt-3">
-                  PREFERRED NAME · VINCENT
-                </p>
 
                 <div
                   className="typewriter text-[11px] text-oxblood mt-8 mb-2"
@@ -45,7 +42,7 @@ export default function HomePage() {
 
               <div className="flex items-center justify-between border-t border-graphite/20 pt-3 typewriter text-[10px] text-graphite/70">
                 <span>HOME</span>
-                <span>CONTENT FIRST</span>
+                <span>VINCENT</span>
                 <span>2026</span>
               </div>
             </div>
@@ -74,11 +71,6 @@ export default function HomePage() {
                 short explanations of what I learned. The cassette style is here
                 for identity, but the content stays clear and organized.
               </p>
-              <p className="text-graphite/80 leading-relaxed text-[15px]">
-                This website focuses on content completeness, OOP application,
-                code presentation, and reflection, so each section is arranged
-                to match course requirements.
-              </p>
             </div>
           </JCard>
         </BezelPanel>
@@ -98,10 +90,10 @@ export default function HomePage() {
             </div>
             <Tracklist className="pb-3" />
             <div className="px-5 pb-5 pt-3 border-t border-dashed border-graphite/30 space-y-2">
-              <p className="typewriter text-[10px] text-graphite/70">MEDIA INPUT STATUS</p>
               <p className="text-[14px] text-graphite/80 leading-relaxed">
-                Compilation_PDF is prepared for your source files. Place final
-                PDFs and screenshots there, then publish copies through public/portfolio.
+                Choose a section from the play order above to browse the
+                portfolio content. Files are organized in Compilation_PDF and
+                published to their matching pages.
               </p>
             </div>
           </JCard>

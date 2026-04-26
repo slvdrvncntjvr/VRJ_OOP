@@ -80,13 +80,13 @@ export function PdfEmbed({
                     className="inline-block h-1.5 w-1.5 rounded-full bg-oxblood led-on"
                     aria-hidden
                   />
-                  FILE PREVIEW NOT SET
+                  PREVIEW NOT AVAILABLE YET
                 </span>
                 <span
                   className="typewriter text-[9px] text-cream/50"
                   style={{ letterSpacing: "0.18em" }}
                 >
-                  SET SRC TO YOUR PDF OR IMAGE ▸ {filename.toUpperCase()}
+                  UNDER CONSTRUCTION ▸ WILL UPLOAD {filename.toUpperCase()} SOON
                 </span>
               </div>
             </div>

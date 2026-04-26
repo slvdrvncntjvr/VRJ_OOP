@@ -28,7 +28,7 @@ const SECTIONS: Section[] = [
         filename: "final-quiz.pdf",
         trackNumber: "01",
         duration: "03:20",
-        annotation: "questions, answers, and explanation",
+        annotation: "Preview not yet available - this will be uploaded once finals start",
       },
     ],
   },
@@ -42,14 +42,14 @@ const SECTIONS: Section[] = [
         filename: "final-activity-1.pdf",
         trackNumber: "02",
         duration: "05:10",
-        annotation: "include screenshots of code and output",
+        annotation: "Under construction - final activity files will be added this finals season",
       },
       {
         title: "Activity 2",
         filename: "final-activity-2.pdf",
         trackNumber: "03",
         duration: "05:45",
-        annotation: "add short explanation and key learning",
+        annotation: "Not available yet - this section will be updated with code and explanation",
       },
     ],
   },
@@ -63,7 +63,7 @@ const SECTIONS: Section[] = [
         filename: "final-project.pdf",
         trackNumber: "04",
         duration: "10:30",
-        annotation: "code, screenshots, and reflection",
+        annotation: "Project documentation will be posted here once final project work begins",
       },
     ],
   },
@@ -77,7 +77,7 @@ const SECTIONS: Section[] = [
         filename: "final-exam.pdf",
         trackNumber: "05",
         duration: "11:30",
-        annotation: "answers or code with reflection",
+        annotation: "Exam output pending - this card will be updated when finals are scheduled",
       },
     ],
   },
@@ -123,8 +123,10 @@ export default function FinalPage() {
               Final Requirements
             </h1>
             <p className="text-cream/70 mt-3 max-w-prose leading-relaxed text-[15px]">
-              This section stores your final-term outputs. Use each card for PDFs,
-              code screenshots, and reflections. Keep explanations short and clear.
+              Finals are not in season yet, so this section is currently under
+              construction. It will be updated with the actual final quizzes,
+              activities, project outputs, and exam files once they are
+              released.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-2">
@@ -180,19 +182,16 @@ export default function FinalPage() {
         <JCard title="REFLECTION" catalog="FINAL">
           <div className="p-6 sm:p-9 space-y-4">
             <p className="font-serif text-2xl text-graphite leading-snug text-pretty">
-              Final outputs show my growth from basic implementation to more
-              organized problem solving in OOP.
+              Finals have not started yet, so this reflection is a placeholder
+              for now.
             </p>
             <p className="text-graphite/80 leading-relaxed text-[15px]">
-              Compared to midterm, I am more confident in designing class
-              responsibilities, choosing method boundaries, and testing logic in
-              smaller steps. I also improved how I document code and connect
-              each output to concepts like encapsulation, inheritance, and
-              reusability.
+              Once the final term begins, I will replace this with my actual
+              experience, including challenges, improvements, and what I learned
+              from each output.
             </p>
-            <div className="flex items-end justify-between pt-4 border-t border-dashed border-graphite/30">
+            <div className="pt-4 border-t border-dashed border-graphite/30">
               <p className="handwritten text-oxblood/85 text-[18px]">- Vincent</p>
-              <span className="typewriter text-[10px] text-graphite/60">END OF FINAL</span>
             </div>
           </div>
         </JCard>

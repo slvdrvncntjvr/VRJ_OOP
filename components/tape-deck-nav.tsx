@@ -29,7 +29,7 @@ export function TapeDeckNav() {
         </div>
 
         {/* Buttons */}
-        <nav className="flex items-center gap-2 sm:gap-3 flex-1 justify-center sm:justify-start">
+        <nav className="grid grid-cols-4 gap-1.5 sm:flex sm:items-center sm:gap-3 flex-1 w-full sm:w-auto">
           {ITEMS.map((item) => {
             const active =
               item.href === "/"
@@ -54,7 +54,7 @@ export function TapeDeckNav() {
                   data-active={active}
                   className={cn(
                     "deck-btn typewriter text-[10px] sm:text-[11px] font-bold",
-                    "px-3 sm:px-5 py-2 sm:py-2.5 min-w-[82px] sm:min-w-[104px]",
+                    "w-full px-2 sm:px-5 py-2 sm:py-2.5 min-w-0 sm:min-w-[104px]",
                     "text-brass hover:text-cream transition-colors",
                     active && "text-cream",
                   )}
@@ -62,7 +62,7 @@ export function TapeDeckNav() {
                   tabIndex={-1}
                 >
                   <span className="flex items-center justify-center gap-2">
-                    <span className="opacity-60">{item.track}</span>
+                    <span className="opacity-60 hidden sm:inline">{item.track}</span>
                     {item.label}
                   </span>
                 </button>

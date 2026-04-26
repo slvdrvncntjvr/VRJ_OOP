@@ -22,13 +22,13 @@ export function NowPlaying() {
 
   return (
     <footer className="relative z-[3] border-t border-brass/25 bezel-dark">
-      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-4 flex-wrap">
+      <div className="mx-auto max-w-6xl px-3 sm:px-4 py-3 flex items-center gap-3 sm:gap-4 flex-wrap">
         <div className="flex items-center gap-2 typewriter text-[10px] text-brass">
           <TapeReel size={22} speed={isPlaying ? "fast" : "normal"} />
           <span style={{ letterSpacing: "0.2em" }}>NOW PLAYING</span>
         </div>
 
-        <div className="flex-1 min-w-[160px] flex items-center gap-3">
+        <div className="order-3 sm:order-none basis-full sm:basis-auto flex-1 min-w-0 flex items-center gap-2 sm:gap-3">
           <span className="typewriter text-[11px] text-cream/70">
             TRACK {current.track}
           </span>
@@ -40,7 +40,7 @@ export function NowPlaying() {
             }}
             aria-hidden
           />
-          <span className="font-serif text-base text-cream">
+          <span className="font-serif text-[15px] sm:text-base text-cream whitespace-nowrap">
             {current.title}
           </span>
           <span
@@ -53,13 +53,13 @@ export function NowPlaying() {
           />
         </div>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="order-2 sm:order-none ml-auto sm:ml-0 flex items-center gap-2 sm:gap-3">
           <Button
             type="button"
             onClick={() => {
               void togglePlay()
             }}
-            className="h-7 px-2.5 typewriter text-[9px]"
+            className="h-7 px-2 typewriter text-[9px]"
           >
             {isPlaying ? "Pause" : "Play"}
           </Button>
@@ -67,7 +67,7 @@ export function NowPlaying() {
             type="button"
             variant="outline"
             onClick={stop}
-            className="h-7 px-2.5 typewriter text-[9px] bg-transparent text-cream border-brass/40 hover:bg-graphite/40"
+            className="h-7 px-2 typewriter text-[9px] bg-transparent text-cream border-brass/40 hover:bg-graphite/40"
           >
             Stop
           </Button>

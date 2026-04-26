@@ -28,9 +28,14 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Vincent Javier — COMP 009 E-Portfolio",
+  title: "▷ vincent",
   description:
     "A cassette-inspired e-portfolio for COMP 009 Object-Oriented Programming by Salvador Vincent Javier (Vincent).",
+  icons: {
+    icon: "/Oras Makina.jpg",
+    shortcut: "/Oras Makina.jpg",
+    apple: "/Oras Makina.jpg",
+  },
   generator: "v0.app",
 }
 

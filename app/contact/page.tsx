@@ -192,7 +192,7 @@ export default function ContactPage() {
         <div className="jcard paper-grain px-5 sm:px-7 py-5 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-2 divide-y sm:divide-y-0 sm:divide-x divide-dashed divide-graphite/30">
           <ChannelRow label="E-MAIL" value="slvdrvncntjvr@gmail.com" />
           <ChannelRow label="UNIVERSITY" value="Polytechnic University of the Philippines" />
-          <ChannelRow label="OFFICE HRS" value="MWF · 14:00–16:00" />
+          <ChannelRow label="OFFICE HRS" value="M/THU · 4:30-7:30PM" />
         </div>
       </BezelPanel>
     </div>

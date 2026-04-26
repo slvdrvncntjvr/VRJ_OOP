@@ -25,14 +25,14 @@ export function Tracklist({ className }: { className?: string }) {
               TRACK {t.n}
             </span>
             <span className="flex items-baseline gap-3 min-w-0">
-              <span className="font-serif text-lg sm:text-xl text-graphite truncate">
+              <span className="font-serif text-lg sm:text-xl text-graphite shrink-0 whitespace-nowrap">
                 {t.title}
               </span>
               <span
                 className="flex-1 border-b border-dotted border-graphite/40 translate-y-[-4px]"
                 aria-hidden
               />
-              <span className="hidden sm:inline typewriter text-[11px] text-graphite/60 truncate">
+              <span className="hidden sm:inline typewriter text-[11px] text-graphite/60 truncate min-w-0">
                 {t.sub}
               </span>
             </span>

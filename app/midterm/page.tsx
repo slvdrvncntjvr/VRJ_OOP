@@ -19,24 +19,46 @@ type Section = {
 
 const SECTIONS: Section[] = [
   {
-    slug: "quizzes",
-    label: "QUIZZES",
+    slug: "assignments",
+    label: "ASSIGNMENTS",
     sub: "MIDTERM · TRACK 01-02",
     items: [
       {
-        title: "Midterm Quiz 1",
-        filename: "midterm-quiz-1.pdf",
+        title: "About Me",
+        filename: "about-me.pdf",
         trackNumber: "01",
-        duration: "03:10",
-        annotation: "Includes key questions, my final answers, and a short concept recap",
-        src: "/portfolio/midterm/midterm-quiz-1.pdf",
+        duration: "02:40",
+        annotation: "Personal introduction and profile details submitted as part of the opening requirement",
+        src: "/portfolio/midterm/about-me.pdf",
       },
       {
-        title: "Midterm Quiz 2",
-        filename: "midterm-quiz-2.pdf",
+        title: "Midterm Assignment #1 - Introduction to Java",
+        filename: "midterm-assignment-1-introduction-to-java.pdf",
         trackNumber: "02",
+        duration: "03:35",
+        annotation: "Foundational Java concepts and initial coding exercises for the midterm period",
+        src: "/portfolio/midterm/midterm-assignment-1-introduction-to-java.pdf",
+      },
+    ],
+  },
+  {
+    slug: "quizzes",
+    label: "QUIZZES",
+    sub: "MIDTERM · TRACK 03-04",
+    items: [
+      {
+        title: "Midterm Quiz #1",
+        filename: "midterm-quiz-1.pdf",
+        trackNumber: "03",
+        duration: "03:10",
+        annotation: "Physical output only - this quiz was completed on paper and is kept as a placeholder",
+      },
+      {
+        title: "Midterm Quiz #2",
+        filename: "midterm-quiz-2.pdf",
+        trackNumber: "04",
         duration: "02:55",
-        annotation: "Shows score breakdown plus a quick reflection on mistakes and improvements",
+        annotation: "Digital submission copy for the second midterm quiz",
         src: "/portfolio/midterm/midterm-quiz-2.jpeg",
       },
     ],
@@ -44,59 +66,91 @@ const SECTIONS: Section[] = [
   {
     slug: "seatwork",
     label: "SEATWORK",
-    sub: "MIDTERM · TRACK 03",
+    sub: "MIDTERM · TRACK 05-07",
     items: [
       {
-        title: "Midterm Seatwork 1",
+        title: "Midterm Seatwork #1",
         filename: "midterm-seatwork-1.pdf",
-        trackNumber: "03",
+        trackNumber: "05",
         duration: "04:20",
-        annotation: "Step-by-step solution with short notes on how each part works",
-        src: "/portfolio/midterm/midterm-seatwork-1.pdf",
+        annotation: "Physical output only - this seatwork was completed on paper and is kept as a placeholder",
+      },
+      {
+        title: "Midterm Seatwork #2 - Basic ATM System",
+        filename: "midterm-seatwork-2-basic-atm-system.pdf",
+        trackNumber: "06",
+        duration: "05:30",
+        annotation: "ATM system implementation covering input flow, validation, and basic account actions",
+        src: "/portfolio/midterm/midterm-seatwork-2-basic-atm-system.pdf",
+      },
+      {
+        title: "Midterm Seatwork #3 - StudentAgeAnalyzer",
+        filename: "midterm-seatwork-3-student-age-analyzer.pdf",
+        trackNumber: "07",
+        duration: "04:50",
+        annotation: "Student age analyzer solution with conditional checks and summarized output",
+        src: "/portfolio/midterm/midterm-seatwork-3-student-age-analyzer.pdf",
       },
     ],
   },
   {
     slug: "activities",
     label: "ACTIVITIES",
-    sub: "MIDTERM · TRACK 04-06",
+    sub: "MIDTERM · TRACK 08-12",
     items: [
       {
-        title: "Activity 1 — ATM Program",
-        filename: "midterm-activity-atm.pdf",
-        trackNumber: "04",
-        duration: "05:30",
-        annotation: "Program flow, sample output, and what I learned from debugging",
-        src: "/portfolio/midterm/midterm-activity-atm.pdf",
+        title: "Midterm Activity #1 - Variables",
+        filename: "midterm-activity-1-variables.pdf",
+        trackNumber: "08",
+        duration: "04:20",
+        annotation: "Variable declaration and usage exercises from the first midterm activity",
+        src: "/portfolio/midterm/midterm-activity-1-variables.pdf",
       },
       {
-        title: "Activity 2 — Decision Structures",
-        filename: "midterm-activity-decision-structures.pdf",
-        trackNumber: "05",
+        title: "Midterm Activity #2 - Operators",
+        filename: "midterm-activity-2-operators.pdf",
+        trackNumber: "09",
         duration: "04:45",
-        src: "/portfolio/midterm/midterm-activity-decision-structures.pdf",
+        annotation: "Operator-focused exercises including arithmetic, relational, and logical operations",
+        src: "/portfolio/midterm/midterm-activity-2-operators.pdf",
       },
       {
-        title: "Activity 3 — Methods",
-        filename: "midterm-activity-methods.pdf",
-        trackNumber: "06",
-        duration: "04:10",
-        src: "/portfolio/midterm/midterm-activity-methods.pdf",
+        title: "Midterm Activity #3 - Simple Wallet System",
+        filename: "midterm-activity-wallet-system.pdf",
+        trackNumber: "10",
+        duration: "04:55",
+        annotation: "Adds balance tracking, deposit and withdrawal logic, and a simple transaction flow",
+        src: "/portfolio/midterm/midterm-activity-wallet-system.pdf",
+      },
+      {
+        title: "Midterm Activity #4 - Grade Evaluation System",
+        filename: "midterm-activity-grade-evaluation-system.pdf",
+        trackNumber: "11",
+        duration: "05:15",
+        annotation: "Evaluates the final grade using score thresholds and a straightforward decision flow",
+        src: "/portfolio/midterm/midterm-activity-grade-evaluation-system.pdf",
+      },
+      {
+        title: "Midterm Activity #5 - Personal Expense Tracker",
+        filename: "midterm-activity-expense-tracker.pdf",
+        trackNumber: "12",
+        duration: "05:05",
+        annotation: "Tracks spending categories and totals using a structured personal expense workflow",
+        src: "/portfolio/midterm/midterm-activity-expense-tracker.pdf",
       },
     ],
   },
   {
     slug: "exam",
     label: "EXAM",
-    sub: "MIDTERM · TRACK 07",
+    sub: "MIDTERM · TRACK 13",
     items: [
       {
         title: "Midterm Exam",
         filename: "midterm-exam.pdf",
-        trackNumber: "07",
-        duration: "12:00",
-        annotation: "Complete output with brief notes on problem-solving approach",
-        src: "/portfolio/midterm/midterm-exam.pdf",
+        trackNumber: "13",
+        duration: "00:00",
+        annotation: "The midterm exam is handled on paper, so this card stays as a placeholder until the official result is available.",
       },
     ],
   },
@@ -128,7 +182,7 @@ function SideBSpine() {
         aria-hidden
       />
       <span className="typewriter text-[10px] text-cream/60">
-        7 TRACKS
+        13 TRACKS
       </span>
     </div>
   )
@@ -151,10 +205,9 @@ export default function MidtermPage() {
               Midterm Requirements
             </h1>
             <p className="text-cream/70 mt-3 max-w-prose leading-relaxed text-[15px]">
-              This section compiles my midterm quizzes, seatwork, activities,
-              and exam outputs. Each card includes the actual file plus a short
-              explanation of what I answered, how I solved it, and what I
-              improved.
+              This section compiles my midterm assignments, quizzes, seatwork,
+              activities, and exam entry. Digital outputs are embedded per
+              requirement, while physical-only outputs are kept as placeholders.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-2">
@@ -218,16 +271,17 @@ export default function MidtermPage() {
           <div className="p-6 sm:p-9 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6">
             <div className="space-y-4">
               <p className="font-serif text-2xl text-graphite leading-snug text-pretty">
-                Midterm was the point where I stopped memorizing OOP terms and
-                started seeing how they help me build real programs.
+                Midterm was the point where I stopped treating OOP as a list of
+                definitions and started using it to structure actual programs.
               </p>
               <p className="text-graphite/80 leading-relaxed text-[15px]">
-                The quizzes, seatwork, and activities pushed me to think more
-                carefully about class design, method use, and program flow
-                before I write code. I also became more confident in explaining
-                what my output means instead of only submitting the result. If I
-                improve anything next, it should be cleaner structure and more
-                consistent abstraction.
+                The quizzes, activities, and the paper-based exam all pushed me
+                to think more carefully about class design, method use, and
+                program flow before I write code. I also became more confident
+                in explaining what my output means instead of only submitting
+                the result. If I improve anything next, it should be cleaner
+                structure, more consistent abstraction, and faster problem
+                breakdown during timed work.
               </p>
               <div className="pt-4 border-t border-dashed border-graphite/30">
                 <p className="handwritten text-oxblood/85 text-[18px]">- Vincent</p>
